@@ -7,15 +7,17 @@
     <title>Reymark Magsanay || Web Portfolio</title>
     <!-- google fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- dev icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <!-- bootstrap min css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- main css -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <section class="container-fluid header px-0">
+    <section class="container-fluid header px-0" id="home">
     <!-- header -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <a class="navbar-brand" href="#">Logo</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
@@ -24,10 +26,10 @@
             <div class="collapse navbar-collapse text-center" id="collapsibleNavId">
                 <ul class="navbar-nav ml-auto ">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Portfolio</a>
@@ -39,13 +41,12 @@
             </div>
         </nav>
         
-        <div class="container header-content">
+        <div class="container header-content" > 
             <div class="row p-4">
-                <div class="col-12">
-                    <h1 class="header-text">HELLO,</h1>
-                    <h1 class="header-text">IM REYMARK</h1>
+                <div class="col-12 text-center">
+                    <h1 class="header-text">HELLO,WORLD.</h1>
+                    <h1 class="header-text">I'M REYMARK</h1>
                     <h1 class="header-text">
-                        <span>A</span>
                         <div class="glitch-container">
                             <span class="glitch" data-text="Mǝd">Web</span>
                             <span class="glitch" data-text="ꓷԍʌԍloqԍɹ">Developer</span>
@@ -56,6 +57,65 @@
         </div>
 
     </section>
+    <section class="container-fluid about-me" id="about">
+        <div class="container">
+            <h1 class="display-3 text-center my-5">ABOUT</h1>
+            <div class="row">
+                <div class="col-12 col-md-6 profile">
+                    <h4 class="display-4">My Profile</h4>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate repellat blanditiis, repellendus ipsa dolor aut beatae fugiat nesciunt a quasi. Facilis est qui, eligendi cupiditate quidem omnis beatae nostrum.</p>
+                    <ul class="about-list">
+                        <li>
+                            <h1 class="lead">
+                                <strong>Name:</strong>
+                            </h1>
+                            <span class="lead text-muted">Reymark Magsanay</span>
+                        </li>
+                        <li>
+                            <h1 class="lead">
+                                <strong>Place of Birth:</strong>
+                            </h1>
+                            <span class="lead text-muted">Makati city</span>
+                        </li>
+                        <li>
+                            <h1 class="lead">
+                                <strong>Date of Birth:</strong>
+                            </h1>
+                            <span class="lead text-muted">Jan 27, 1995</span>
+                        </li>
+                        <li>
+                            <h1 class="lead">
+                                <strong>Address:</strong>
+                            </h1>
+                            <span class="lead text-muted">blk 75 lot 3 brgy rizal. makati city</span>
+                        </li>
+                        <li>
+                            <h1 class="lead">
+                                <strong>Email:</strong>
+                            </h1>
+                            <span class="lead text-muted">reymark.magsanay@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 skills">
+                    <h4 class="display-4">My Skills</h4>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptate repellat blanditiis, repellendus ipsa dolor aut beatae fugiat nesciunt a qua</p>
+                    <div class="flex-icons-container">
+                        <i class="flex-ico devicon-html5-plain-wordmark colored"></i>
+                        <i class="flex-ico devicon-css3-plain-wordmark colored"></i>
+                        <i class="flex-ico devicon-bootstrap-plain-wordmark colored"></i>
+                        <i class="flex-ico devicon-laravel-plain-wordmark colored"></i>
+                        <i class="flex-ico devicon-react-original colored"></i>
+                        <i class="flex-ico devicon-php-plain colored"></i>
+                        <i class="flex-ico devicon-javascript-plain colored"></i>
+                        <i class="flex-ico devicon-sass-original colored"></i>
+                        <i class="flex-ico devicon-gitlab-plain colored"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- bootstrap js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

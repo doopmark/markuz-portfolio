@@ -7,6 +7,9 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 10px;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .navbar {
     min-height: 70px;
@@ -48,16 +51,19 @@ body {
 
 .header {
     background-image: linear-gradient(rgba(253, 253, 253, 0.9) ,rgba(255, 255, 255, 0.6)), url(../images/background.jpg);
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
     background-position: top;
-    clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    // clip-path: polygon(50% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    position: relative;
     &-text {
         font-size: 5rem;
     }
     &-content {
-        position: relative;
-        top: 15%;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%,-40%);
         .glitch-container {
             display: inline;
             background-color: black;
@@ -95,6 +101,27 @@ body {
         }
         
     }
+}
+
+.about-me {
+  min-height: 100vh;
+  overflow: hidden;
+  .flex-icons-container {
+    display: flex;
+    // justify-content: center;
+    // align-content: center;
+    flex-wrap: wrap;
+    .flex-ico {
+      font-size: 8rem;
+      margin: 1rem;
+    }
+  }
+  .about-list {
+    list-style-type: none;
+    li {
+      margin-bottom: 2rem;
+    }
+  }
 }
 
 
@@ -156,9 +183,7 @@ body {
     $px: 0;$px2: 0;
   }
   
-  
   @keyframes glitch{
-        
     @include mini-glitch($r, $b, 1, 0, 10);
     @include mini-glitch($r, $g, 0.5, 11, 20);  
     @include mini-glitch($b, $g, 0.7, 21, 40);
@@ -180,10 +205,16 @@ body {
     @include big-glitch($g, $b, 60, 91, 92);
     
     @include mini-glitch($b, $g, 0.7, 92, 100);
-  }
+}
   
-// @media screen and (max-width: 600px) {
-//     .navbar {
-//         border: none;
-//     }
-// }
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .header-text {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .header-text {
+    font-size: 5rem;
+  }
+}
