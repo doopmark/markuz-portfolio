@@ -11,11 +11,12 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .navbar {
     min-height: 70px;
     border-bottom: 2px solid #0659c5;
     // background-color: rgba(0, 0, 0, 0.383);
-    
+    transition: all .2s;
     &-nav {
         .nav-item .nav-link{
             color: #383838;
@@ -47,6 +48,17 @@ html {
             color: #0659c5;
         }
     }
+}
+.fade-in {
+  background-color: #fdfdfdfd;
+  min-height: 60px;
+  padding: 8px 5rem;
+
+}
+
+.mobile-nav {
+  background-color: #fdfdfdfd;
+
 }
 
 .header {
@@ -107,6 +119,7 @@ html {
 .about-me {
   min-height: 100vh;
   overflow: hidden;
+  background-color: #f8f8f8;
   .flex-icons-container {
     display: flex;
     justify-content: center;
