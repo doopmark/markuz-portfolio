@@ -1,5 +1,5 @@
-//   console.log(scrollpos)
-if(window.screen.width >= 1024) {
+  console.log(window.innerWidth)
+if(window.innerWidth >= 1024) {
 
     let scrollpos = window.scrollY
     const header = document.querySelector("nav")
