@@ -173,7 +173,7 @@ html {
     -webkit-background-clip:text;
     // z-index: 2;
     font-weight: bold;
-   
+    font-size: 5rem;
   }
   .flex-icons-container {
     display: flex;
@@ -208,13 +208,15 @@ html {
     -webkit-background-clip:text;
     // z-index: 2;
     font-weight: bold;
+    text-align: center;
+    font-size: 5rem;
   }
   .flex-ports{
     display: flex;
     height: 25rem;
     flex-wrap: wrap;
     // background-color: red;
-    
+    justify-content: center;
     &-item1 {
       background-color: darkgreen;
       // flex: 1;
@@ -222,6 +224,34 @@ html {
       background-size: cover;
       width: 33.7rem;
       margin: .5rem;
+      position: relative;
+      overflow: hidden;
+      .h2cont {
+        background-color: rgba(255, 0, 0, 0.349);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        h2 {
+          position: relative;
+          color: #fff;
+         transition: all .3s;
+         border: 3px solid #fff;
+         padding: 5px;
+         cursor: pointer;
+          &:hover {
+            background-color: #f6f6f6;
+            color: #111111
+          }
+        }
+      }
+      &:hover .h2cont {
+        left: 0;
+      }
     }
     &-item2 {
       background-color: darkred;
@@ -229,6 +259,34 @@ html {
       background-size: cover;
       width: 33.6rem;
       margin: .5rem;
+      position: relative;
+      overflow: hidden;
+      .h2cont {
+        background-color: rgba(255, 0, 0, 0.349);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        h2 {
+          position: relative;
+          color: #fff;
+         transition: all .3s;
+         border: 3px solid #fff;
+         padding: 5px;
+         cursor: pointer;
+          &:hover {
+            background-color: #f6f6f6;
+            color: #111111
+          }
+        }
+      }
+      &:hover .h2cont {
+        left: 0;
+      }
     }
   }
   .flex-ports-1{
@@ -236,6 +294,7 @@ html {
     height: 25rem;
     flex-wrap: wrap;
     // background-color: rgb(0, 255, 13);
+    justify-content: center;
     &-item1 {
       background-color: rgb(198, 214, 104);
       background-image: url(../images/cp1.png);
@@ -243,6 +302,34 @@ html {
       background-size: cover;
       // flex: 1;
       margin: .5rem;
+      position: relative;
+      overflow: hidden;
+      .h2cont {
+        background-color: rgba(255, 0, 0, 0.349);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        h2 {
+          position: relative;
+          color: #fff;
+         transition: all .3s;
+         border: 3px solid #fff;
+         padding: 5px;
+         cursor: pointer;
+          &:hover {
+            background-color: #f6f6f6;
+            color: #111111
+          }
+        }
+      }
+      &:hover .h2cont {
+        left: 0;
+      }
     }
     &-item2 {
       background-color: rgb(214, 95, 95);
@@ -251,6 +338,34 @@ html {
       background-size: cover;
       // flex: 1;
       margin: .5rem;
+      position: relative;
+      overflow: hidden;
+      .h2cont {
+        background-color: rgba(255, 0, 0, 0.349);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        h2 {
+          position: relative;
+          color: #fff;
+         transition: all .3s;
+         border: 3px solid #fff;
+         padding: 5px;
+         cursor: pointer;
+          &:hover {
+            background-color: #f6f6f6;
+            color: #111111
+          }
+        }
+      }
+      &:hover .h2cont {
+        left: 0;
+      }
     }
   }
 }
@@ -265,7 +380,7 @@ html {
     $steps:20;
     @for $i from 0 through $steps{
       #{percentage($i*(1/$steps))}{
-        clip:rect(random(100)+px,9999px,random(100)+px,0);
+        clip:rect(random(105)+px,9999px,random(100)+px,0);
       }
     }
   }
@@ -339,9 +454,20 @@ html {
 }
   
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
+  .flex-ports,
+  .flex-ports-1 {
+    height: 50rem !important;
+  }
+}
+
+@media screen and (max-width: 601px) {
   .header-text {
     font-size: 10vw;
+  }
+  .about-title,
+  .port-title {
+    font-size: 3rem !important;
   }
 }
 // @media screen and (min-width: 601px) and (max-width: 1024px) {
