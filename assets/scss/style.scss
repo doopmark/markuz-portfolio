@@ -243,9 +243,16 @@ html {
          border: 3px solid #fff;
          padding: 5px;
          cursor: pointer;
+         a {
+          color: #fff;
+          text-decoration: none;
+         }
           &:hover {
             background-color: #f6f6f6;
-            color: #111111
+            
+          }
+          &:hover a {
+            color: rgb(20, 20, 20);
           }
         }
       }
@@ -273,14 +280,20 @@ html {
         transition: all .3s;
         h2 {
           position: relative;
-          color: #fff;
          transition: all .3s;
          border: 3px solid #fff;
          padding: 5px;
          cursor: pointer;
+         a {
+          color: #fff;
+          text-decoration: none;
+         }
           &:hover {
             background-color: #f6f6f6;
-            color: #111111
+            
+          }
+          &:hover a {
+            color: rgb(20, 20, 20);
           }
         }
       }
@@ -321,9 +334,16 @@ html {
          border: 3px solid #fff;
          padding: 5px;
          cursor: pointer;
+         a {
+          color: #fff;
+          text-decoration: none;
+         }
           &:hover {
             background-color: #f6f6f6;
-            color: #111111
+            
+          }
+          &:hover a {
+            color: rgb(20, 20, 20);
           }
         }
       }
@@ -357,9 +377,16 @@ html {
          border: 3px solid #fff;
          padding: 5px;
          cursor: pointer;
+         a {
+          color: #fff;
+          text-decoration: none;
+         }
           &:hover {
             background-color: #f6f6f6;
-            color: #111111
+            
+          }
+          &:hover a {
+            color: rgb(20, 20, 20);
           }
         }
       }
