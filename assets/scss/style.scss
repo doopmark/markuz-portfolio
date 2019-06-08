@@ -400,6 +400,20 @@ html {
 .contact-me {
   // min-height: 100vh;
   // background-color: red;
+  .row {
+    margin-bottom: 10rem;
+  }
+  .contact-title {
+    position: relative;
+    color: transparent;
+    background-image: linear-gradient( rgb(0, 0, 0), rgb(58, 78, 109));
+    -webkit-background-clip:text;
+    // z-index: 2;
+    font-weight: bold;
+    text-align: center;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
   .map {
     overflow: hidden;
     iframe {
@@ -512,7 +526,8 @@ html {
     font-size: 10vw;
   }
   .about-title,
-  .port-title {
+  .port-title,
+  .contact-title {
     font-size: 3rem !important;
   }
 }
