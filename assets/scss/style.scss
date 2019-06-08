@@ -397,6 +397,25 @@ html {
   }
 }
 
+.contact-me {
+  // min-height: 100vh;
+  // background-color: red;
+  .map {
+    overflow: hidden;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.footer-main {
+  background-color: rgb(14, 27, 70);
+  color: #fff;
+  .footer-copyright {
+     background-color: #0c1022;
+  }
+}
 
 // ===================================================================================
 // ===================================================================================
